@@ -116,9 +116,13 @@
 				<version>3.5.2</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>${xmlFiles}</suiteXmlFile>
 					</suiteXmlFiles>
-				</configuration> 	
+					<systemPropertyVariables>
+						<executionBrowser>${browser}</executionBrowser>
+						<appUrl>${url}</appUrl>
+					</systemPropertyVariables>
+				</configuration>
 			</plugin>
 
 		</plugins>
